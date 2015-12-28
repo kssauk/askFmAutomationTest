@@ -33,13 +33,13 @@ public class BlockUserPAge extends AbstractPage{
     @FindBy(xpath = "//a[@href='/account/friends']")
     private WebElement buttonFriends;
 
-    @FindBy(xpath = "//input[@placeholder='Поиск']")
+    @FindBy(xpath = "//input[@class='searchForm']")
     private WebElement inputFriendName;
 
     @FindBy(xpath = "//a[@class='askfm-avatar45']")
     private WebElement buttonFriend;
 
-    @FindBy(xpath = "//a[@data-tooltip='Заблокировать']")
+    @FindBy(xpath = "//a[@class='profile-header-icon right icon-block']")
     private WebElement buttonBlock;
 
     @FindBy(xpath = "//a[@class='defaultListItem']")
