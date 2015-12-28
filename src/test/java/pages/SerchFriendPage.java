@@ -44,11 +44,16 @@ public class SerchFriendPage extends AbstractPage {
     @FindBy(xpath = "//span[@class='blockLink foot bold']//span[@dir='ltr']")
     private WebElement linkLoggedInUser;
 
+    @FindBy(xpath = "//a[@data-action='CookieNoticeAccept']")
+    private WebElement buttonCloseCookie;
+
     public List<String> findFriend () throws InterruptedException {
 
         buttonFriends.click();
         logger.info("Open page Friends");
-        //buttonFindFriends.click();
+        Thread.sleep(2000);
+        buttonCloseCookie.click();
+        Thread.sleep(2000);
         inputFriendName.sendKeys(USERNAME2);
         Thread.sleep(2000);
 

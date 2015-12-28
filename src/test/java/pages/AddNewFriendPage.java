@@ -50,9 +50,14 @@ public class AddNewFriendPage extends AbstractPage{
     @FindBy(xpath = "//a[@class='profileButton baseButton-grey']")
     private WebElement buttonUnfollow;
 
+    @FindBy(xpath = "//a[@data-action='CookieNoticeAccept']")
+    private WebElement buttonCloseCookie;
+
     public List<String> addNewFriend () throws InterruptedException {
         buttonFriends.click();
         logger.info("Open page Friends");
+        buttonCloseCookie.click();
+        Thread.sleep(2000);
         buttonFindFriends.click();
         Thread.sleep(2000);
         inputFriendName.sendKeys(USERNAME3);
