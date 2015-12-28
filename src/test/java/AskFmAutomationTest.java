@@ -52,12 +52,12 @@ public class AskFmAutomationTest {
 
 
 
-//    @Test(description="Add new location")
-//    public void oneCanAddNewLocation(){
-//        steps.loginAskFm(USERNAME1, PASSWORD1);
-//        List<String> location = steps.newLocation();
-//        Assert.assertEquals(location.get(0),location.get(1));
-//    }
+    @Test(description="Add new location")
+    public void oneCanAddNewLocation(){
+        steps.loginAskFm(USERNAME1, PASSWORD1);
+        List<String> location = steps.newLocation();
+        Assert.assertEquals(location.get(0),location.get(1));
+    }
 
     @Test(description="Find a friend")
     public void oneCanFindAFriend() throws InterruptedException {

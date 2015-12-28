@@ -34,7 +34,7 @@ public class InformationPage extends AbstractPage {
     @FindBy(xpath = "//input[@id='user_location']")
     private WebElement inputLocation;
 
-    @FindBy(xpath = "//input[@value='Сохранить']")
+    @FindBy(xpath = "//div[contains(@class, 'simpleFormSection')]//input[@class='topBarSubmit']")
     private WebElement buttonSave;
 
     @FindBy(xpath = "//a[@href='/TestingProject']")
