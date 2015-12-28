@@ -54,7 +54,7 @@ public class Steps {
         return answers;
     }
 
-    public List<String> newLocation(){
+    public List<String> newLocation() throws InterruptedException {
         InformationPage informationPage = new InformationPage(driver);
         List<String> locations = informationPage.addNewInformation();
         return locations;

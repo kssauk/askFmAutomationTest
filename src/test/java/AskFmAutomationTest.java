@@ -53,7 +53,7 @@ public class AskFmAutomationTest {
 
 
     @Test(description="Add new location")
-    public void oneCanAddNewLocation(){
+    public void oneCanAddNewLocation() throws InterruptedException {
         steps.loginAskFm(USERNAME1, PASSWORD1);
         List<String> location = steps.newLocation();
         Assert.assertEquals(location.get(0),location.get(1));

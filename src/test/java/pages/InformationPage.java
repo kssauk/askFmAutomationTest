@@ -43,7 +43,7 @@ public class InformationPage extends AbstractPage {
     @FindBy(xpath = "//div[@class='aboutMore']//p")
     private WebElement textAboutMore;
 
-    public List<String> addNewInformation(){
+    public List<String> addNewInformation() throws InterruptedException {
 
         buttonSettings.click();
         logger.info("Open Settings page");
@@ -52,6 +52,7 @@ public class InformationPage extends AbstractPage {
         logger.info("Added New location");
         buttonSave.click();
         logger.info("New location save");
+        Thread.sleep(2000);
         buttonProfile.click();
 
         List<String> locations = new ArrayList<String>();
