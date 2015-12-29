@@ -32,9 +32,6 @@ public class SerchFriendPage extends AbstractPage {
     @FindBy(xpath = "//a[@href='/account/friends']")
     private WebElement buttonFriends;
 
-//    @FindBy(xpath = "//div[@id='searchResults']//a[@href='/account/search']")
-//    private WebElement buttonFindFriends;
-
     @FindBy(xpath = "//input[@class='searchForm']")
     private WebElement inputFriendName;
 

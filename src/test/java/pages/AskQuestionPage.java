@@ -25,7 +25,6 @@ public class AskQuestionPage extends AbstractPage {
 
 
     private final Logger logger = Logger.getLogger(AskQuestionPage.class);
-    // private Steps steps = new Steps();
 
     @Override
     public void openPage() {
@@ -89,7 +88,7 @@ public class AskQuestionPage extends AbstractPage {
     }
 
     public List<String> askNewQuestion() throws InterruptedException {
-        // String questionFullText = Utils.getRandomString(6);
+
         logger.info("Asking page opened");
         buttonAskFriend.click();
         inputNewQuestion.sendKeys(HOW_DO_YOU_DO);
@@ -112,10 +111,6 @@ public class AskQuestionPage extends AbstractPage {
         inputUsername.sendKeys(USERNAME2);
         inputPassword.sendKeys(PASSWORD2);
         buttonSubmit.click();
-
-//        driver.close();
-//        steps.initBrowser();
-//        steps.loginAskFm(USERNAME2, PASSWORD2);
 
         buttonNotifications.click();
         buttonAnswerQuestion.click();

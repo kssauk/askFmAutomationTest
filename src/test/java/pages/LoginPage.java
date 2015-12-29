@@ -31,9 +31,6 @@ public class LoginPage extends AbstractPage{
     @FindBy(xpath = "//a[@href='/TestingProject']")
     private WebElement buttonProfile;
 
-//    @FindBy(xpath = "//span[contains(.,'TestingProject')]")
-//    private WebElement linkLoggedInUser;
-
     @FindBy(xpath = "//span[@class='blockLink foot bold']//span[@dir='ltr']")
     private WebElement linkLoggedInUser;
 

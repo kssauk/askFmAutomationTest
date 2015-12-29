@@ -1,7 +1,6 @@
 package steps;
 
 import org.apache.log4j.Logger;
-//import org.apache.xpath.operations.String;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 

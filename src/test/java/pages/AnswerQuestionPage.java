@@ -87,7 +87,6 @@ public class AnswerQuestionPage extends AbstractPage{
 
 
     public List<String> answerNewQuestion () throws InterruptedException {
-        //String answerFullText = Utils.getRandomString(7);
 
         buttonNotifications.click();
         logger.info("Answered page opened");
@@ -124,7 +123,6 @@ public class AnswerQuestionPage extends AbstractPage{
         newAnswer.add(I_AM_FINE);
         newAnswer.add(textAnsweredText.getText());
         return newAnswer;
-        //textAnsweredText.getText();
     }
 
     public void deleteQuestion() throws InterruptedException {
